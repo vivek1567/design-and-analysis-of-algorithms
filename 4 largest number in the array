@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+   int loop,i,largest,n,arr[100];
+   printf("enter the array size:");
+   scanf("%d",&n);
+printf("enter the array elements:");
+for(i=0;i<n;i++)
+scanf("%d",&arr[i]);
+   largest = arr[100];
+   
+   for(i = 1; i <n; i++) {
+      if( largest < arr[i] ) 
+         largest = arr[i];
+   }
+   printf("Largest element of array is %d", largest);   
+   return 0;
+}
